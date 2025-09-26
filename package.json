@@ -1,0 +1,36 @@
+{
+  "name": "business-management-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run db:setup && next build",
+    "start": "npm run db:setup && next start",
+    "lint": "next lint",
+    "db:setup": "node scripts/setup-database.js"
+  },
+  "dependencies": {
+    "@types/node": "^18",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^8.7.0",
+    "clsx": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "next": "14.0.0",
+    "postcss": "^8",
+    "react": "^18",
+    "react-dom": "^18",
+    "recharts": "^2.8.0",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/uuid": "^9.0.7"
+  }
+}
